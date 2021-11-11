@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>FOOD</title>
+
+        <style type="text/css">
+
+           
+            @font-face{ font-family: 'lulu';
+                        src: url('fonte/fonte1-webfont.woff') format('woff'), url('fonte/fonte1-webfont.woff2') format('woff2');
+                        font-weight: normal;
+                        font-style: normal;}
+
+            @font-face{ font-family: 'din';
+                        src: url('fonte/DIN-Neuzeit-Grotesk-LT-W01-BdCn.woff') format('woff');
+                        font-weight: normal;
+                        font-style: normal;}
+                        
+            @font-face{ font-family: 'belinda';
+                        src: url('fonte/belinda-webfont.woff') format('woff'), url('fonte/belinda-webfont.woff2') format('woff2');
+                        font-weight: normal;
+                        font-style: normal;}            
+
+                    
+            h2{font-family: 'lulu';
+               font-size: 100px;
+               margin-top: 0px;
+               margin-bottom: 30px;
+               color: white;
+               letter-spacing: -5px;} 
+               
+            h3{font-family: 'din';
+               font-size: 35px;
+               margin-bottom: 20px;
+               color: white;
+               font-weight: lighter;}
+
+            h4{font-family: 'belinda';
+               font-size: 25px;
+               font-weight: lighter;
+               margin-top: 0px;
+               margin-bottom: 50px;
+               color: #2f2e2e;}   
+
+            p{font-family: 'din';
+              margin: 5px;
+              color: #2f2e2e;}
+
+            .div{text-align: center; 
+                 margin-top: 150px; 
+                 margin-left: 70px;}
+                 
+            .div2{text-align: center; 
+                 margin-top: 150px; 
+                 margin-right: 70px;}
+                 
+            #det{display: inline;
+                 margin-bottom: -2%;}   
+
+            .margin{margin-bottom: 50px;} 
+
+            header{display: flex;
+                   justify-content: space-between;
+                   width: 100%;
+                   height: 200px;
+                   align-items: center;
+                   position: fixed;}
+
+            #detalhe3{margin-left: 20%;} 
+            
+            #detalhe5{color: gray;}
+
+            #header{width: 20%;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-left: 3%;} 
+                    
+            #header2{display: flex;
+                     width: 23%;}        
+
+            header>section>p{font-size: 20px;}
+
+            .h3{color: #2f2e2e; 
+                margin: 0px; 
+                letter-spacing: 4px;
+                text-align: center;} 
+
+            #p1{color: white;}       
+
+            button{font-family: din;
+                   width: 130px;
+                   height: 42px;
+                   font-size: 25px;
+                   font-weight: 550;
+                   background-color: transparent;
+                   border: solid 2px white;
+                   color: white;}
+
+            button:hover{background-color: #2f2e2e;
+                         cursor: pointer;
+                         color: white;
+                         border: none;}       
+
+            #button3{width: 190px;}       
+
+            #section0{width: 100%;
+                      height: 54.2px;
+                      background-color: #2f2e2e;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      margin-bottom: -40px;}
+                             
+            #gela{font-family: 'belinda';
+                  color: #2f2e2e;
+                  text-align: center;
+                  font-size: 40px;} 
+
+            #section{width: 100%;
+                     height: 770px;
+                     background-image: url(img/capa.webp);
+                     background-repeat: no-repeat;
+                     background-color: #f9db79;
+                     align-items: center;
+                     background-position: center;
+                     background-size: 20%;}
+                     
+            #section1{width: 100%;
+                      height: 760px;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: center;}         
+
+            .button2{border-color: #2f2e2e; 
+                     color: #2f2e2e;}       
+
+            #section2{width: 100%;
+                      height: 651;
+                      display: flex;
+                      margin-bottom: -0.8%;}
+
+            #section3{width: 100%;
+                      height: 651;
+                      display: flex;
+                      justify-content: end;}          
+
+            .divisao{width: 50%;
+                     height: 651px;
+                     text-align: center;}
+            
+            .section4{width: 100%;
+                      height: 760px;
+                      background-color: #b5e8d5;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: center;
+                      background-image: url(img/2.webp);
+                      background-attachment: fixed;
+                      background-repeat: no-repeat;
+                      background-size: 70%;
+                      background-position-x: 50%;
+                      margin-top: -13px;}
+
+            #section5{width: 100%;
+                      height: 755px;
+                      background-color: #b5e8d5;
+                      background-image: url( https://static.wixstatic.com/media/baac51_863daade1baf47a8995907cb1f24d57c.png/v1/fill/w_980,h_780,al_c,q_90,usm_0.66_1.00_0.01/baac51_863daade1baf47a8995907cb1f24d57c.webp), url( https://static.wixstatic.com/media/baac51_863daade1baf47a8995907cb1f24d57c.png/v1/fill/w_980,h_780,al_c,q_90,usm_0.66_1.00_0.01/baac51_863daade1baf47a8995907cb1f24d57c.webp);
+                      background-attachment: fixed, fixed;
+                      background-repeat: no-repeat, no-repeat;
+                      background-position: 0 0 , 128% 0;
+                      margin-bottom: 80px;}
+                           
+            #detalhes{background-image: url(img/3.webp);
+                      background-color: #ffbfb3;} 
+
+            footer{width: 100%;
+                   height: 400px;
+                   background-color: black;
+                   display: flex;
+                   justify-content: center;}
+                   
+            .h32{font-size: 25px;}
+
+            footer>section>p{color: white;
+                             margin-top: 10%;
+                             margin-left: 4%;}
+
+            footer>section>div>div>p{color: white;
+                                     margin: 2px;
+                                     font-size: 18px;
+                                     letter-spacing: 0.8px;}
+                                
+            #div4{display: flex; 
+                      width: 100%; 
+                      justify-content: space-around;}
+
+            #section6{width: 40%;
+                      margin-top: 3%;}          
+               
+            #ult{height: 480px; 
+                 width: 100%; 
+                 display: flex;  
+                 margin-top: 13px;}    
+
+            input{width: 94.5%;
+                  height: 38px;
+                  background-color: #0f0e0e;
+                  border: 2px solid white;
+                  color: white;
+                  display: block;
+                  padding-left: 6%;} 
+                  
+            #input{font-family: 'din';
+                   font-size: 25px;
+                   width: 102%;
+                   margin-top: 3%;
+                   background-color: black;}
+                   
+            input::placeholder{font-family: 'din';
+                               font-weight: 300;
+                               font-size: 15px;
+                               color: white;}       
+                   
+            footer>section>img{margin-top: 15%;}       
+                      
+        </style>
+
+
+    </head>
+    <body>
+        <header>
+            <section id="header">
+
+                <p id="detalhe5">HOME</p>
+                <p>SABORES</p>
+                <p>EVENTOS</p>
+                <p>SOBRE</p>
+            </section>
+            <section id="header2">
+
+                <div>
+                    <img src="img/Imagem1.png" width="40%" style="margin-bottom: -15%;"/>
+                    <p id="det">Login</p>
+                </div>
+                <div id="detalhe3">
+                    <img src="img/Imagem2.png" width="57%" />
+                </div> 
+            </section>
+
+        </header>
+
+        <main>
+
+            <section id="section0">
+
+                <p id="p1">AV. BERNARDINO DE CAMPOS, 98 - SÃO PAULO, SP 12345-678  |  Todo dia 10:00-22:00</p>
+            </section>
+
+            <section id="section">
+
+                <h3 id="gela">Gelateria</h3>
+
+                <section id="section1">
+
+                    <h3>SORVETE</h3>
+                    <h2>ARTESANAL</h2>
+                    <button>MENU</button>
+                </section>
+            </section>
+          
+            <section id="section2">
+
+                <div class="divisao">
+
+                    <img src="img/sorve.webp" width="100%" />
+                </div>
+
+                <div class="div">
+
+                    <h3 class="h3">NOSSOS SABORES</h3>
+
+                    <h4>Novos e deliciosos!</h4>
+
+                    <p>Sou um parágrafo. Clique aqui para editar e adicionar o seu</p>
+                    <p>texto. É fácil! Basta clicar em "Editar Texto" ou clicar duas</p>
+                    <p class="margin">vezes sobre mim para adicionar o conteúdo e trocar fontes.</p>
+
+                    <button class="button2">MENU</button>
+                </div>
+            </section>
+
+            <section class="section4">
+
+                <h3>SABORES</h3>
+                <h2>SORBET</h2>
+                <button>MENU</button>
+            </section>
+
+            <section id="section3">
+
+                <div class="div2">
+
+                    <h3 class="h3">NOSSO LOCAL</h3>
+
+                    <h4>Sorvete a beira mar</h4>
+
+                    <p>Sou um parágrafo. Clique aqui para editar e adicionar o seu</p>
+                    <p>texto. É fácil! Basta clicar em "Editar Texto" ou clicar duas</p>
+                    <p class="margin">vezes sobre mim para adicionar o conteúdo e trocar fontes.</p>
+
+                    <button class="button2">MENU</button> 
+                </div>
+
+                <div class="divisao">
+
+                    <img src="img/cadei.webp" width="100%" />
+                </div>
+            </section>
+
+            <section class="section4" id="detalhes">
+
+                <h3>BUFÊ & MAIS</h3>
+                <h2>eventOs</h2>
+                <button id="button3">FAÇA UM DESEJO</button>
+            </section>
+
+            <section id="section2">
+
+                <div class="divisao">
+
+                    <img src="img/sobre.webp" width="100%" />
+                </div>
+
+                <div class="div">
+
+                    <h3 class="h3">SOBREMESAS</h3>
+
+                    <h4>Delícias com sorvete</h4>
+
+                    <p>Sou um parágrafo. Clique aqui para editar e adicionar o seu</p>
+                    <p>texto. É fácil! Basta clicar em "Editar Texto" ou clicar duas</p>
+                    <p class="margin">vezes sobre mim para adicionar o conteúdo e trocar fontes.</p>
+
+                    <button class="button2">MENU</button>
+                </div>
+            </section>
+
+            <section id="section5">
+
+                <img src="img/4.webp" width="100%" />
+            </section>
+
+            <h3 class="h3">#SABOR EM DOBRO</h3>
+
+            <section id="ult" >
+
+                <img src="img/11.jpg" width="2.73%" />
+                <img src="img/22.jpg" width="31.5%" />
+                <img src="img/33.jpg" width="31.5%" />
+                <img src="img/44.jpg" width="31.5%" />
+                <img src="img/55.jpg" width="2.73%" />
+                
+            </section>
+        </main>
+
+        <footer>
+            <section id="section6">
+
+                <div id="div4">
+                    <div>
+                        <h3 class="h32">ENDEREÇO</h3>
+
+                        <P>Av. Bernardino de</P>
+                        <p>Campos, 98 São Paulo,</p>
+                        <p>SP 12345-678</p>
+                    </div>
+
+                    <div>
+                        <h3 class="h32">CONTATO</h3>
+
+                        <P>info@meusite.com</P>
+                        <p>Tel: (11) 3456-7890</p>
+                    </div>
+
+                    <div>
+                        <h3 class="h32">HORÁRIOS</h3>
+
+                        <P>ABERTO TODOS OS DIAS</P>
+                        <p>10:00 - 22:00</p>
+                    </div>
+                </div>
+
+                <p>© 2023 por Gelateria. Orgulhosamente criado com Wix.com</p>  
+
+            </section>
+
+            <section style=" width: 25% ; margin-top: 2%;">
+
+                <h3 class="h32" style="margin-bottom: 5px;">NOVIDADES</h3>
+                <form>
+                    <input type="text" name="email" placeholder="Insira seu email aqui*"/>
+                    <input type="submit" name="enviar" value="PARTICIPAR" id="input"/>
+
+                </form>
+
+                <img src="img/redes.png" width="30%" />
+            </section>
+        </footer>
+    </body>
+</html>
